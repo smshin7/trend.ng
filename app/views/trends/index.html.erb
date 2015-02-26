@@ -1,0 +1,24 @@
+<h1><%= @city.name %></h1>
+
+<%= @trend_names %>
+
+<%= button_to "Refresh", trends_path, :method => :get %>
+
+<% @images.each do |img| %>
+  <div class="row">
+
+    <div class="row">
+      <div class="text-center">
+        <%= image_tag img[0]['images']['standard_resolution']['url'] %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center">
+        <h3><%= img[0]['user']['username'] %></h3>
+        <%= img[0]['caption']['text'] %>
+      </div>  
+    </div>
+
+  </div>
+<% end %>
