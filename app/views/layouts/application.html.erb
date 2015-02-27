@@ -8,6 +8,13 @@
 </head>
 <body>
 
+
+<% if current_user %>
+  Welcome <%= link_to current_user.name, current_user %>! | <%= link_to "Sign out", signout_path %>
+<% else %>
+  <%= link_to "Sign in with Instagram", "/auth/instagram" %>
+<% end %> 
+
 <nav class="navbar navbar-static-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
