@@ -1,16 +1,21 @@
-<div class="row">
+<div class="row" id="logo">
   <div class="text-center">
     <h1>Trend.ng</h1>
     <p>View Instagram photos of Top 10 Trends on Twitter!</p>
   </div>
 </div>
 
-<div class="row">
-  <div class="text-center">
-    <h1>Cities</h1>
-    <% @locations.each do |l| %>
-      <p><%= link_to l.name, trends_path(:woeid => l.woeid) %></p>
-    <% end %> 
+<section id="cities">
+  <div class="container well">
+    <div class="text-center">
+      <h1>Cities</h1>
+      <% @locations.each do |l| %>
+        <div class="col-md-4"><%= link_to l.name, trends_path(:woeid => l.woeid), class: "btn" %></div>
+      <% end %> 
+    </div>
   </div>
-</div>
+</section>
 
+<div class="footer">
+  <p>This is where the footer goes</p>
+</div>

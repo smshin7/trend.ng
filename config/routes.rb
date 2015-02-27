@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get '/trends' => 'trends#index', as: :trends
 
+  get '/about' => 'trends#about', as: :about
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
