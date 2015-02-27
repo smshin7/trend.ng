@@ -12,7 +12,7 @@
 
 
 <div class="row">
-  <%= button_to "Refresh", trends_path, :method => :get %>
+  <%= link_to "Refresh", "", { :onclick => "history.go(0)" } %>
 </div>
 
 <% @images.each do |img| %>

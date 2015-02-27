@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
  
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/failure'
+
   root 'trends#homepage'
 
   get '/trends' => 'trends#index', as: :trends
