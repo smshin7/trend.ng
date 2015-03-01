@@ -6,6 +6,12 @@
   position: relative;
   margin: 0 auto;
 }
-#app-logo {
-  background: url(trending-logo.jpg);
+#logo {
+  background-image: url(trending-logo.png);
+  width: 100%;
+  height: 600px;
+}
+#info {
+  height: 300px;
+  background-color: peachpuff;
 }

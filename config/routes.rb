@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
  
   get 'auth/instagram', as: "auth_provider"
-  get 'auth/instgram/callback' => 'sessions#create'
+  get 'auth/instagram/callback' => 'sessions#create'
   post 'auth/instagram/callback' => 'sessions#create'
   get 'auth/failure' => redirect('/')
   post 'auth/failure' => redirect('/')
