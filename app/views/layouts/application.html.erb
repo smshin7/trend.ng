@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
 <% if current_user %>
   Welcome <%= current_user.name %>! | <%= link_to "Sign out", signout_path %>
 <% else %>
@@ -18,8 +17,8 @@
 <nav class="navbar navbar-static-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <li class="nav active app-logo"><%= link_to "Trend.ng", root_path %></li>
+    <div class="nav navbar-nav">
+      <li class="nav active"><%= link_to "Trend.ng", root_path %></li>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

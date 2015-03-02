@@ -13,14 +13,12 @@ class TrendsController < ApplicationController
 
     @trend_names.each do |tn|
       response = Image.search_by_tag(tn)
-      image_hash = response['data'].sample
+      image_hash = response['data'].first(3)
       if image_hash.present?
         @images << image_hash
       end
     end
+    
+  
   end
-
-  def about
-  end
-
 end
