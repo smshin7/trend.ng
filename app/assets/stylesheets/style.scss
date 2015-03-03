@@ -1,22 +1,15 @@
 #cities {
   padding: 200px 0;
-  background: url(default-city.jpg);
   height: auto;
   width: 100%;
   position: relative;
   margin: 0 auto;
 }
 #logo { 
-  background: url(trending-logo.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   width: 100%;
   height: 600px;
 }
 #info {
-  height: 300px;
   color: white;
   background-color: black;
 }
@@ -27,3 +20,4 @@
   width: 100%;
   height: 100%;
 }
+

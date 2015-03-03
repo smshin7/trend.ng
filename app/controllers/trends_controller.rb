@@ -10,15 +10,15 @@ class TrendsController < ApplicationController
     @trend_names = @trends.map { |t| t[:name].delete(" ").delete("#") } 
 
     @images = []
+    response = ""
 
     @trend_names.each do |tn|
       response = Image.search_by_tag(tn)
-      image_hash = response['data'].first(3)
+      image_hash = response['data'].sample
       if image_hash.present?
         @images << image_hash
       end
     end
-    
   
   end
 end
