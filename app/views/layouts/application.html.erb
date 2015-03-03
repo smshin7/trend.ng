@@ -8,13 +8,7 @@
 </head>
 <body>
 
-<% if current_user %>
-  Welcome <%= current_user.name %>! | <%= link_to "Sign out", signout_path %>
-<% else %>
-  <%= link_to "Sign in with Instagram", "/auth/instagram" %>
-<% end %> 
-
-<nav class="navbar navbar-static-top">
+<nav>
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="nav navbar-nav">
@@ -33,6 +27,13 @@
             <% end %>
           </ul>
         </li>
+      </ul>
+      <ul class="nav navbar-right">
+        <% if current_user %>
+          <li class="active">Welcome <%= current_user.name %>!</li><li class="active"><%= link_to "Sign out", signout_path %></li>
+        <% else %>
+          <li class="active"><%= link_to "Sign in with Instagram", "/oauth/connect" %></li>
+        <% end %> 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

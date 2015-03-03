@@ -1,43 +1,18 @@
-<section id="logo">
-</section>
-
-<section id="info">
-  <div class="text-center">
-    <h1>What is Trend.ng?</h1>
-    <p>Trend.ng is a way to visualize the top 10 trends on Twitter using pictures found on Instagram. Twitter's top 10 trends are always changing and Trend.ng can be a fun way to keep up with current topics. Trend.ng will allow you to like the pictures using your own Instagram account.</p>
-  </div>
-</section>
-
-<section id="instruction">
-  <div class="text-center">
-    <h1>How it Works!</h1>
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Select Location</h2>
-        <p>Pick one of the given locations within the US.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>View Trends</h2>
-        <p>View the top 10 trends on Twitter for each location</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Sign in to Instagram</h2>
-        <p>You can like the photos you are interested in by signing into your Instagram account.</p>
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1>Trend.ng</h1>        
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button"><%= link_to "Sign in with Instagram", "/oauth/connect" %></button>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="cities">
-  <div class="container well">
-    <div class="text-center">
-      <h1>Cities</h1>
-      <% @locations.each do |l| %>
-        <div class="col-md-4"><%= link_to l.name, trends_path(:woeid => l.woeid) %></div>
-      <% end %> 
-    </div>
-  </div>
-</section>
+  </div> 
+</div>
 
 <div class="footer">
   <p>This is where the footer goes</p>

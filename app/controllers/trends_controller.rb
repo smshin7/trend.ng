@@ -1,8 +1,10 @@
 class TrendsController < ApplicationController
+  # controller action to find all Locations in seed file
   def homepage
     @locations = Location.all
   end
 
+  # controller action for loading trends/iamges to index page
   def index
     @city = Location.find_by_woeid(params[:woeid])
     @trends = Trend.search_trends(params[:woeid])
@@ -19,6 +21,12 @@ class TrendsController < ApplicationController
         @images << image_hash
       end
     end
-  
+  end
+
+  # action to like images
+  def like_image
+    client = Instagram.client(:access_token => session[:access_token])
+    client.like_media("#{params[:id]}")
+    redirect_to trends_path() 
   end
 end

@@ -42,10 +42,6 @@ gem 'twitter'
 
 gem 'instagram'
 
-gem 'omniauth'
-gem 'omniauth-instagram'
-
-
 gem 'figaro'
 
 gem 'httparty'

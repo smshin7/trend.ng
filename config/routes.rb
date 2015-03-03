@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
  
-  get 'auth/instagram', as: "auth_provider"
-  get 'auth/instagram/callback' => 'sessions#create'
-  post 'auth/instagram/callback' => 'sessions#create'
-  get 'auth/failure' => redirect('/')
-  post 'auth/failure' => redirect('/')
+
+  get "/oauth/connect" => "sessions#connect"
+  get "/auth/instagram/callback" => "sessions#callback"
+
   get 'signout' => 'sessions#destroy'
   post 'signout' => 'sessions#destroy'
 
@@ -13,5 +12,7 @@ Rails.application.routes.draw do
   get '/trends' => 'trends#index', as: :trends
 
   get '/about' => 'trends#about', as: :about
+
+  get '/media_like/:id' => 'trends#like_image'
 
 end

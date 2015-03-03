@@ -1,4 +1,4 @@
-<div class="container" style="height: 25%">
+<div id="city-cover-photo">
   <img src="<%= @city.image %>" id="city-image" />
 </div>
 
@@ -15,6 +15,7 @@
 </div>
 
 <% @images.each do |img| %>
+  <div id="image-section">
     <div class="row">
       <div class="text-center">
         <a href="<%= img['link'] %>" target="_blank">
@@ -25,8 +26,13 @@
 
     <div class="row">
       <div class="text-center">
+        <p><%= img['likes']['count'] %> Likes</p>
         <h3><%= img['user']['username'] %></h3>
-        <%= img['caption']['text'] %>
+        <p id="image-caption"><%= img['caption']['text'] %></p>
       </div>  
     </div>
+    <div class="row">
+      <div class="text-center"><%= link_to "Like Photo", "/media_like/#{ img['id'] }", class: "btn btn-primary" %></div>
+    </div>
+  </div>
 <% end %>
