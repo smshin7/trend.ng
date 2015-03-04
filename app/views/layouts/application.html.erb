@@ -35,7 +35,12 @@
       </ul>
       <ul class="nav navbar-right">
         <% if current_user %>
-          <li><%= current_user.username %></li><li class="active"><%= link_to "Sign out", signout_path %></li>
+          <li class"dropdwn">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.username %><span class="caret"></span></a>
+            <ul classs="dropdown-menu" role="menu">
+              <li class="active"><%= link_to "Sign out", signout_path %></li>
+            </ul>
+          </li>
         <% else %>
           <li class="active"><%= link_to "Sign in with Instagram", "/oauth/connect" %></li>
         <% end %> 
