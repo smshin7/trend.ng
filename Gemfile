@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -35,11 +35,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 gem 'pry-rails'
 
 # for twitter API calls
 gem 'twitter'
 
+# gem for instagram API calls
 gem 'instagram'
 
 gem 'figaro'
@@ -69,3 +71,5 @@ end
 group :production do
   gem 'rails_12factor'
 end
+
+gem 'passenger'
