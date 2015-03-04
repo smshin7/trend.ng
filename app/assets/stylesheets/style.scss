@@ -1,6 +1,14 @@
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #FFFFFF;
+}
 #nav-logo {
- height: 45px;
- width: auto;
+  height: 45px;
+  width: auto;
 }
 #cities {
   padding: 200px 0;
