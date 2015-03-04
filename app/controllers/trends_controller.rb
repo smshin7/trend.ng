@@ -29,4 +29,11 @@ class TrendsController < ApplicationController
     client.like_media("#{params[:id]}")
     redirect_to trends_path() 
   end
+
+  # action to unlike images
+  def unlike_image
+    client = Instagram.client(:access_token => session[:access_token])
+    client.unlike_media("#{params[:id]}")
+    redirect_to trends_path()
+  end
 end

@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get '/about' => 'trends#about', as: :about
 
   get '/media_like/:id' => 'trends#like_image'
+  get '/media_unlike/:id' => 'trends#unlike_image'
 
 end
