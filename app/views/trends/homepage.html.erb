@@ -7,7 +7,7 @@
       <div class="hero">
         <h1>See What's Trend.ng</h1>        
         <% if current_user %>
-          <%= button_to "See how it works", about_path, class: "btn btn-primary" %>
+          <%= button_to "See How it Works", '/about', class: "btn btn-primary btn-lg" %>
         <% else %>
           <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-hero btn-lg" %>
         <% end %>
