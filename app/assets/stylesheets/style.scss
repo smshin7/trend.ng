@@ -1,3 +1,7 @@
+#nav-logo {
+ height: 45px;
+ width: auto;
+}
 #cities {
   padding: 200px 0;
   height: auto;
@@ -15,12 +19,12 @@
 #info {
   background: url(https://ununsplash.imgix.net/photo-1413896235942-39c2eb7cd584?q=75&fm=jpg&s=82734c02c2c6a780dc31f24c54077dd6) fixed;
   background-size: cover;
-  height: 400px;
+  height: auto;
   color: white;
   background-color: rgba(0,0,0,0.2);
 }
 #info h1 {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 #info p {
   width: 70%;
@@ -29,11 +33,20 @@
 #instruction {
   background: url(https://unsplash.imgix.net/photo-1414446483597-8d8f792bfe39?q=75&fm=jpg&s=2756ab87b786786b9e689b6204d99c90);
   background-size: cover;
-  height: 400px;
+  height: auto;
   color: white;
 }
 #instruction h1 {
   padding-top: 100px;
+}
+#select-location {
+  height: 200px;
+}
+#view-trends {
+  height: 200px;
+}
+#use-instagram {
+  height: 200px;
 }
 #images {
   width: 75%;
