@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
-  CALLBACK_URL = "http://localhost:3000/auth/instagram/callback"
+  CALLBACK_URL = "https://trend-ng.herokuapp.com/auth/instagram/callback"
 
   def connect
     redirect_to Instagram.authorize_url(:redirect_uri => CALLBACK_URL, :scope => "likes")
