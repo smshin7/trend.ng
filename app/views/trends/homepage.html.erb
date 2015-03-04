@@ -5,15 +5,14 @@
     <div class="item slides active">
       <div class="slide-1"></div>
       <div class="hero">
-        <hgroup>
-            <h1>Trend.ng</h1>        
-        </hgroup>
-        <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-hero btn-lg" %>
+        <h1>Trend.ng</h1>        
+        <% if current_user %>
+          <%= button_to "See how it works", about_path, class: "btn btn-primary" %>
+        <% else %>
+          <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-hero btn-lg" %>
+        <% end %>
       </div>
     </div>
   </div> 
 </div>
 
-<div class="footer">
-  <p>This is where the footer goes</p>
-</div>
