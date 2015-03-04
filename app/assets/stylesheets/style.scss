@@ -49,11 +49,12 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#city-image {
-  width: 100%;
-  height: 100%;
+#like-button {
+  float: left;
 }
-
+#unlike-button {
+  float: right;
+}
 .footer {
   background-color: #000000;
 }

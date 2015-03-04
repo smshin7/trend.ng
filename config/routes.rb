@@ -2,6 +2,8 @@ Rails.application.routes.draw do
  
 
   get "/oauth/connect" => "sessions#connect"
+  post "/oauth/connect" => "sessions#connect"
+
   get "/auth/instagram/callback" => "sessions#callback"
 
   get 'signout' => 'sessions#destroy'
