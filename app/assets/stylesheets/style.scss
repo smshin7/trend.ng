@@ -17,36 +17,88 @@
   height: 800px;
 }
 #info {
-  background: url(https://ununsplash.imgix.net/photo-1413896235942-39c2eb7cd584?q=75&fm=jpg&s=82734c02c2c6a780dc31f24c54077dd6) fixed;
-  background-size: cover;
+  background: url(https://ununsplash.imgix.net/photo-1413896235942-39c2eb7cd584?q=75&fm=jpg&s=82734c02c2c6a780dc31f24c54077dd6) 50% 0 fixed;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
   height: auto;
-  color: white;
+  color: #FFFFFF;
   background-color: rgba(0,0,0,0.2);
+  padding: 100px 0 50px 0;
 }
 #info h1 {
-  padding-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
 }
 #info p {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding-bottom: 100px;
 }
 #instruction {
-  background: url(https://unsplash.imgix.net/photo-1414446483597-8d8f792bfe39?q=75&fm=jpg&s=2756ab87b786786b9e689b6204d99c90);
-  background-size: cover;
+  background-color: black;
   height: auto;
-  color: white;
-}
-#instruction h1 {
-  padding-top: 100px;
+  font-size: 50px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  color: #FFFFFF;
 }
 #select-location {
-  height: 200px;
+  background: url(https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&s=be1c78fc7817477e060c8d8aa4905212) 50% 0 fixed; 
+  height: 600px;  
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 200px 0;
+  color: #FFFFFF;
+}
+#select-location h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
+}
+#select-location p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 #view-trends {
-  height: 200px;
+  background: url(https://ununsplash.imgix.net/photo-1424393101579-527cca47bf3c?q=75&fm=jpg&s=7166e2a52b2921978e8a3244ae11a76c) 50% 0 fixed; 
+  height: 600px;  
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8); 
+  padding: 200px 0;
+  color: #FFFFFF;
+}
+#view-trends h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
+}
+#view-trends p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 #use-instagram {
-  height: 200px;
+  background: url(https://unsplash.imgix.net/photo-1425315283416-2acc50323ee6?q=75&fm=jpg&s=f1ab294edc8a479ac4b335ae8d5cd17a) 50% 0 fixed; 
+  height: 600px;  
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 200px 0;
+  color: #FFFFFF;
+}
+#use-instagram h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
+}
+#use-instagram p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 #images {
   width: 75%;
