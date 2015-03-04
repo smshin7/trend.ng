@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
   // fade in
-   $(".fade").animate({opacity: 0.25},1000});
+   $(".fade").animate({opacity: 0.25},1000);
+
    // cache the window object
    $window = $(window);
  
