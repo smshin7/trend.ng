@@ -22,6 +22,13 @@ class TrendsController < ApplicationController
       end
     end
 
+    @trend_image_hash = {}
+    i = 0
+    while i < @images.count do
+      @trend_image_hash[@trend_names[i]] = @images[i]
+      i += 1
+    end
+
   end
 
   # action to like images
