@@ -5,7 +5,7 @@
       <% if current_user %>
           <%= button_to "See How it Works", '/about', class: "btn btn-primary btn-lg" %>
       <% else %>
-          <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-success btn-lg" %>
+          <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-success btn-lg", method: :get %>
       <% end %>
     </div>
   </div>
