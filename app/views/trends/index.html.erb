@@ -46,7 +46,7 @@
         <p id="image-caption"><%= img['caption']['text'] %></p>
       </div>  
     </div>
-    <div id="buttons">
+    <div id="buttons" class="text-center">
       <div id="like-button"><%= link_to "Like Photo", "/media_like/#{ img['id'] }", class: "btn btn-primary" %></div>
       <div id="unlike-button"><%= link_to "Unlike Photo", "/media_unlike/#{ img['id'] }", class: "btn btn-danger" %></div>
     </div>
