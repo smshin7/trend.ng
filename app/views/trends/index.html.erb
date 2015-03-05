@@ -20,17 +20,15 @@
   </div>
 </div>
 
-
-<div class="text-center">
-  <% @trend_names.each do |tn| %>
-    <span>
-      <p>#<%= tn %></p>  
-    </span>
-  <% end %>
-</div>
-
-<% @images.each do |img| %>
-  <div id="image-section">
+<% @trend_image_hash.each do |trend, img| %>
+  <div class="image-section">
+    <div class="trend-title">
+      <div class="row">
+        <div class="text-center">
+          <p><%= trend %></p>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="text-center">
         <a href="<%= img['link'] %>" target="_blank">
@@ -42,7 +40,7 @@
     <div class="row">
       <div class="text-center">
         <h3><%= img['user']['username'] %></h3>
-        <% if img['caption']['text'] %>
+        <% if img['caption']['text'] != nil %>
           <p id="image-caption"><%= img['caption']['text'] %></p>
         <% end %>
       </div>  

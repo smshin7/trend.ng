@@ -9,7 +9,7 @@ class TrendsController < ApplicationController
     @city = Location.find_by_woeid(params[:woeid])
     @trends = Trend.search_trends(params[:woeid])
 
-    @trend_names = @trends.map { |t| t[:name].delete(" ").delete("#") } 
+    @trend_names = @trends.map { |t| t[:name].delete(" ").delete("#") }
 
     @images = []
     response = ""
@@ -21,6 +21,7 @@ class TrendsController < ApplicationController
         @images << image_hash
       end
     end
+
   end
 
   # action to like images

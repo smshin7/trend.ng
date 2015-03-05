@@ -127,7 +127,10 @@
   width: 75%;
   margin: 0 auto;
 }
-#image-section {
+.trend-title {
+  font-size: 50px;
+}
+.image-section {
   background-color: #bdc3c7;
   border-radius: 3px;
   padding-top: 20px;
@@ -140,6 +143,7 @@
   -webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
   box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+  font-family: 'Open Sans', sans-serif;
 }
 #like-buttons {
   margin-top: 10px;
