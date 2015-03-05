@@ -50,7 +50,9 @@
       <div class="row" id="like-buttons">
         <div class="col-md-4">
           <% if current_user %>
-            <div class="text-center"><%= link_to "Like Photo", "/media_like/#{ img['id'] }", class: "btn btn-primary btn-lg" %></div>
+            <div class="text-center">
+              <a href="/media_like/#{ img['id'] }"><i class="fa fa-heart"></i></a>
+            </div>
           <% end %>
         </div>
         <div class="col-md-4">
