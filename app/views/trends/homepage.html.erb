@@ -1,18 +1,12 @@
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
- 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1"></div>
-      <div class="hero fade">
-        <h1>See What's Trend.ng</h1>        
-        <% if current_user %>
+<div id=homepage>
+  <div id="fade-in">
+    <div class="text-center">
+     <h1>See What's Trend.ng</h1>        
+      <% if current_user %>
           <%= button_to "See How it Works", '/about', class: "btn btn-primary btn-lg" %>
-        <% else %>
-          <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-hero btn-lg" %>
-        <% end %>
-      </div>
+      <% else %>
+          <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-success btn-lg" %>
+      <% end %>
     </div>
-  </div> 
+  </div>
 </div>
-
