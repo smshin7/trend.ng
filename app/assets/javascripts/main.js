@@ -4,6 +4,15 @@ $(window).load(function(){
   $('#fade-in').hide().fadeIn(2000);
    // cache the window object
    $window = $(window);
+
+  // thumbs shake on click
+  //$(".fa-thumbs-up").click(function() {
+  //console.log($(this));
+  //});
+
+  //$("#thumbs-down").click(function() {
+    //$(this).effect("shake");
+  //});
  
    $('section[data-type="background"]').each(function(){
      // declare the variable to affect the defined data-type

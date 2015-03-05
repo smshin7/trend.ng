@@ -144,6 +144,15 @@
 #like-buttons {
   margin-top: 10px;
 }
+#like-buttons a {
+  font-size: 50px;
+}
+#like-buttons a .thumbs-up {
+  color: green;
+}
+#like-buttons a .thumbs-down {
+  color: red;
+}
 #likes-count {
   font-size: 20px;
   margin-top: 15px;

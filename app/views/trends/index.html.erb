@@ -42,7 +42,9 @@
     <div class="row">
       <div class="text-center">
         <h3><%= img['user']['username'] %></h3>
-        <p id="image-caption"><%= img['caption']['text'] %></p>
+        <% if img['caption']['text'] %>
+          <p id="image-caption"><%= img['caption']['text'] %></p>
+        <% end %>
       </div>  
     </div>
     
@@ -51,7 +53,7 @@
         <div class="col-md-4">
           <% if current_user %>
             <div class="text-center">
-              <a href="/media_like/#{ img['id'] }"><i class="fa fa-heart"></i></a>
+              <a href="/media_like/<%= img['id'] %>?woeid=<%= params[:woeid] %>"><i class="fa fa-thumbs-up thumbs-up"></i></a>
             </div>
           <% end %>
         </div>
@@ -66,9 +68,12 @@
         </div>
         <div class="col-md-4">
           <% if current_user %>
-            <div class="text-center"><%= link_to "Unlike Photo", "/media_unlike/#{ img['id'] }", class: "btn btn-danger btn-lg" %></div>
+            <div class="text-center">
+              <a href="/media_unlike/<%= img['id'] %>?woeid=<%= params[:woeid] %>"><i class="fa fa-thumbs-down thumbs-down"></i></a>
+            </div>
           <% end %>
         </div>
       </div>
   </div>
 <% end %>
+
