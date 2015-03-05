@@ -1,6 +1,6 @@
 <style>
   #city-cover-photo {
-    background: url(<%= @city.image %>);
+    background: url(<%= @city.image %>) 50% 0 fixed;
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -14,11 +14,11 @@
     color: #fff;
   }
 </style>
-<div id="city-cover-photo">
+<section id="city-cover-photo" data-type="background" data-speed="2">
   <div class="text-center">
     <p id="city-name"><%= @city.name %></p>
   </div>
-</div>
+</section>
 
 <% @trend_image_hash.each do |trend, img| %>
   <div class="image-section">
