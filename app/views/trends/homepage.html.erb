@@ -3,9 +3,9 @@
     <div class="text-center">
      <h1>See What's Trend.ng</h1>        
       <% if current_user %>
-          <%= button_to "See How it Works", '/about', class: "btn btn-primary btn-lg" %>
+          <%= button_to "See How it Works", '/about', class: "btn btn-primary btn-lg", method: :get %>
       <% else %>
-          <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-success btn-lg", method: :get %>
+          <%= button_to "Sign in with Instagram", "/oauth/connect", class: "btn btn-success btn-lg" %>
       <% end %>
     </div>
   </div>
