@@ -7,7 +7,7 @@
   }
   #city-name {
     font-family: 'Open Sans', sans-serif;
-    font-size: 175px;
+    font-size: 11vw;
     text-align: center;
     vertical-align: middle;
     line-height: 600px;
@@ -40,7 +40,7 @@
     <div class="row">
       <div class="text-center">
         <h3><%= img['user']['username'] %></h3>
-        <% if img['caption']['text'] != nil %>
+        <% if img['caption'] && img['caption']['text'] %>
           <p id="image-caption"><%= img['caption']['text'] %></p>
         <% end %>
       </div>  
