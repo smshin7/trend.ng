@@ -16,7 +16,7 @@ Location.create(
   { name: "Seattle", woeid: "2490383", image: "http://i.imgur.com/bBKGJdm.jpg" },
   { name: "Dallas", woeid: "2388929", image: "http://i.imgur.com/yrTCquv.jpg" },
   { name: "Miami", woeid: "2450022", image: "http://i.imgur.com/3J2S3Vt.jpg" },
-  { name: "Washington D.C.", woeid: "2450022", image: "http://i.imgur.com/WTNEAs3.jpg" },
+  { name: "Washington D.C.", woeid: "2514815", image: "http://i.imgur.com/WTNEAs3.jpg" },
   { name: "Detroit", woeid: "2391585", image: "http://i.imgur.com/lz5RoIr.jpg" },
   { name: "Atlanta", woeid: "2357024", image: "http://i.imgur.com/M9tHxuM.jpg" },
   { name: "Phoenix", woeid: "2471390", image: "http://i.imgur.com/WZTwoO1.jpg" },
