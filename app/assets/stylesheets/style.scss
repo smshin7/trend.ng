@@ -68,7 +68,13 @@
   color: #FFFFFF;
 }
 .instruction-number {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  color: #C0392B;
+  background-color: #FFFFFF;
   font-size: 75px;
+  margin: 0 auto;
 }
 #select-location {
   background: url(https://unsplash.imgix.net/photo-1425321395722-b1dd54a97cf3?q=75&fm=jpg&s=be1c78fc7817477e060c8d8aa4905212) 50% 0 fixed; 
