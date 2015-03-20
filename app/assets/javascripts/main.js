@@ -1,5 +1,5 @@
 $(window).load(function(){
-
+  
   // fade in
   $('#fade-in').hide().fadeIn(2000);
    // cache the window object

@@ -32,7 +32,7 @@
     <div class="row">
       <div class="text-center">
         <a href="<%= img['link'] %>" target="_blank">
-          <%= image_tag img['images']['standard_resolution']['url'] %>
+          <%= image_tag img['images']['standard_resolution']['url'], class: "ig-image" %>
         </a>
       </div>
     </div>
@@ -48,26 +48,10 @@
     
     <!-- only shows like buttons if user is logged in -->
       <div class="row" id="like-buttons">
-        <div class="col-md-4">
+        <div class="text-center">
           <% if current_user %>
             <div class="text-center">
-              <a href="/media_like/<%= img['id'] %>?woeid=<%= params[:woeid] %>"><i class="fa fa-thumbs-up thumbs-up"></i></a>
-            </div>
-          <% end %>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center" id="likes-count">
-            <% if img['likes']['count'] == 1 %>
-              <p><%= img['likes']['count'] %> Like</p>
-            <% else %>
-              <p><%= img['likes']['count'] %> Likes</p>
-            <% end %>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <% if current_user %>
-            <div class="text-center">
-              <a href="/media_unlike/<%= img['id'] %>?woeid=<%= params[:woeid] %>"><i class="fa fa-thumbs-down thumbs-down"></i></a>
+              <a href="/media_like/<%= img['id'] %>?woeid=<%= params[:woeid] %>"><i class="fa fa-heart heart"></i></a>
             </div>
           <% end %>
         </div>
